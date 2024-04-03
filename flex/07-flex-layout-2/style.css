@@ -4,26 +4,76 @@ body {
   min-height: 100vh;
 }
 
-.header {
+.content-wrapper {
+  width: 90%;
+  margin: 0px auto;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
 }
 
-.footer {
+
+footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.sidebar {
+main {
+  display: flex;
+}
+
+aside {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 16px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+a {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+
+.card-container  {
+  display: flex;
+  padding: 32px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 32px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 40%;
+  height: 300px;
+  padding: 16px;
 }
